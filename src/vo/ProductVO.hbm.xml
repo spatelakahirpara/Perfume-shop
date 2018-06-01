@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.ProductVO" table="product_table">
+  
+  
+  <id name="p_id" type="int" column="p_id" >
+   <generator class="increment"/>
+  </id>
+  
+  <property name="product_name">
+   <column name="product_name" />
+  </property>
+  <property name="product_desc">
+   <column name="product_desc" />
+  </property>
+  
+   <property name="product_price">
+   <column name="product_price" />
+  </property>
+   <property name="product_image">
+   <column name="product_image" />
+  </property>
+      </class>
+  
+</hibernate-mapping>

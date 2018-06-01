@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="vo.CartVO" table="cart_table">
+  
+  
+  <id name="c_id" type="int" column="c_id" >
+   <generator class="increment"/>
+  </id>
+  
+ <property name="cart_name">
+   <column name="cart_name" />
+  </property>
+  <property name="cart_p_name">
+   <column name="cart_p_name" />
+  </property>
+ 
+   <property name="product_quantity">
+   <column name="product_quantity" />
+  </property>
+  
+  <property name="unit_price">
+   <column name="unit_price" />
+  </property>
+  
+   <property name="total_price">
+   <column name="total_price" />
+  </property>
+  
+   </class>
+  
+</hibernate-mapping>
